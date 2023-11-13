@@ -1,0 +1,24 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: sap-btp-tf
+spec:
+  interval: 1m
+  url: https://github.com/maxi1555/terraform-sap-btp
+  ref:
+    branch: main
+---
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: sap-btp-tf
+spec:
+  path: ./terraform
+  approvePlan: "auto"
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: sap-btp-tf
+  writeOutputsToSecret:
+    name: sap-btp-tf-outputs

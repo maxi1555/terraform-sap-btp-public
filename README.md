@@ -1,0 +1,1 @@
+https://blogs.sap.com/2023/11/13/gitops-with-argo-cd-kyma-terraforming-sap-btp-kyma-clusters/

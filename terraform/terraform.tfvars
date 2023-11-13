@@ -1,0 +1,6 @@
+globacct="<your value>"
+password="<your value>"
+region="us10"
+shootname="project"
+tenant="project"
+username="<your value>"
