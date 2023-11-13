@@ -5,7 +5,7 @@ metadata:
   name: sap-btp-tf
 spec:
   interval: 1m
-  url: https://github.com/maxi1555/terraform-sap-btp
+  url: https://github.com/maxi1555/terraform-sap-btp-public
   ref:
     branch: main
 ---
